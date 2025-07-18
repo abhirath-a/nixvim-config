@@ -5,7 +5,10 @@
     ./keymaps.nix
     ./options.nix
   ];
-  plugins.web-devicons.enable = true;
+  plugins = {
+    web-devicons.enable = true;
+    lz-n.enable = true;
+  };
   colorschemes.tokyonight = {
     enable = true;
     settings.style = "night";

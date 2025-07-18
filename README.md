@@ -1,17 +1,22 @@
-# Nixvim template
+# Abhi's NixVim Config
+> A fast and modern `neovim` configuration configured with `nixvim`. It starts up in 17-20ms.
 
-This template gives you a good starting point for configuring nixvim standalone.
+## Features
 
-## Configuring
+- 🔥 Blazingly fast.
+- 💤 Lazy Loaded packages.
+- 🧹 Sane default settings for options, autocmds, and keymaps.
+- 📦 Useful, agreeable packages pre-installed.
 
-To start configuring, just add or modify the nix files in `./config`.
-If you add a new configuration file, remember to add it to the
-[`config/default.nix`](./config/default.nix) file
-
-## Testing your new configuration
-
-To test your configuration simply run the following command
-
-```
-nix run .
-```
+## Plugins used
+- 💤 `lz-n` - for fast, lazy loaded package installations.
+- ✨ `fidget.nvim` - for a simple and minimal `vim.notify` replacement 
+- 📝 `blink.cmp` - for quick and natural feeling autocompletion in the editor.
+- 🔎 `fzf-lua` - for rapid searching and selection.
+- 🛢️ `oil.nvim` - for idiomatic file editing.
+- ✅ `nvim-lint` - for reliable and dependable linting.
+- 🪥 `conform.nvim` - for asynchronous formatting that also formats on save. 
+- 🤖 `copilot.lua` - for all of the useful features that github copilot offers to the developer experience.
+- ⛓️ `fugitive.vim` - for git operations inside of your favorite text editor.
+- ⚡ `flash.nvim` - for fast selection past live grep.
+- 🔱 `harpoon` - for fast switching between important files.

@@ -3,8 +3,37 @@
     treesitter = {
       enable = true;
       settings.auto_install = true;
+      # lazyLoad.settings = {
+      #   event = "BufReadPost";
+      #   cmd = [
+      #     "TSUpdateSync"
+      #     "TSUpdate"
+      #     "TSInstall"
+      #   ];
+      # };
     };
-    ts-autotag.enable = true;
+    ts-autotag = {
+      enable = true;
+      lazyLoad.settings.ft = [
+        "astro"
+        "glimmer"
+        "handlebars"
+        "html"
+        "javascript"
+        "jsx"
+        "javascriptreact"
+        "markdown"
+        "php"
+        "rescript"
+        "svelte"
+        "tsx"
+        "twig"
+        "typescript"
+        "typescriptreact"
+        "vue"
+        "xml"
+      ];
+    };
     lsp = {
       enable = true;
       servers = {
@@ -26,6 +55,10 @@
         svelte = [ "eslint" ];
         ruby = [ "rubocop" ];
       };
+      lazyLoad.settings.event = [
+        "BufReadPre"
+        "BufNewFile"
+      ];
     };
     conform-nvim = {
       enable = true;
@@ -53,11 +86,22 @@
           async = true;
           timeout_ms = 500;
         };
+        lazyLoad.settings = {
+          event = [
+            "BufReadPre"
+            "BufNewFile"
+          ];
+          keys = [
+            "<leader>gf"
+          ];
+          cmd = "ConformInfo";
+        };
       };
     };
     blink-copilot.enable = true;
     blink-cmp = {
       enable = true;
+      # lazyLoad.settings.event = "InsertEnter";
       settings = {
         keymap.preset = "default";
         cmdline = {
@@ -144,4 +188,10 @@
       };
     };
   };
+  keymaps = [
+    {
+      action = "<cmd>lua require('conform').format({ lsp_fallback = true, async = true, timeout_ms = 500 })<cr>";
+      key = "<leader>gf";
+    }
+  ];
 }

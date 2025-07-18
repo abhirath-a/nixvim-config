@@ -13,8 +13,27 @@
         "<leader>fw" = "diagnostics_workspace";
       };
     };
-    flash.enable = true;
-    harpoon.enable = true;
+    flash = {
+      enable = true;
+      lazyLoad.settings.keys = [
+        "s"
+        "S"
+        "r"
+        "R"
+      ];
+    };
+    harpoon = {
+      enable = true;
+      lazyLoad.settings.keys = [
+        "<c-s>"
+        "<leader>a"
+        "<c-e>"
+        "<leader>q"
+        "<leader>w"
+        "<leader>e"
+        "<leader>r"
+      ];
+    };
     oil = {
       enable = true;
       settings = {
@@ -31,6 +50,7 @@
         };
         win_options.wrap = true;
       };
+      lazyLoad.settings.keys = [ "<C-n>" ];
     };
   };
   keymaps = [
@@ -83,23 +103,23 @@
       key = "<leader>a";
     }
     {
-      action = "<cmd>require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())";
+      action = "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<cr>";
       key = "<C-e>";
     }
     {
-      action = "require('harpoon'):list():select(1)";
+      action = "<cmd>lua require('harpoon'):list():select(1)<cr>";
       key = "<leader>q";
     }
     {
-      action = "require('harpoon'):list():select(2)";
+      action = "<cmd>lua require('harpoon'):list():select(2)<cr>";
       key = "<leader>w";
     }
     {
-      action = "require('harpoon'):list():select(3)";
+      action = "<cmd>lua require('harpoon'):list():select(3)<cr>";
       key = "<leader>e";
     }
     {
-      action = "require('harpoon'):list():select(4)";
+      action = "<cmd>lua require('harpoon'):list():select(4)<cr>";
       key = "<leader>r";
     }
   ];
