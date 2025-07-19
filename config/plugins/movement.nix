@@ -51,6 +51,7 @@
         win_options.wrap = true;
       };
       lazyLoad.settings.keys = [ "<C-n>" ];
+      lazyLoad.settings.cmd = "Oil";
     };
   };
   keymaps = [
