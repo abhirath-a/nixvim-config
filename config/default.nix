@@ -9,9 +9,9 @@
     web-devicons.enable = true;
     lz-n.enable = true;
   };
-  colorschemes.tokyonight = {
+  colorschemes.catppuccin = {
     enable = true;
-    settings.style = "night";
+    settings.style = "mocha";
   };
   globals.mapleader = " ";
   globals.localmapleader = "//";

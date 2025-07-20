@@ -4,10 +4,10 @@
       enable = true;
       lazyLoad.settings.event = "InsertEnter";
     };
-    grug-far = {
-      enable = true;
-      lazyLoad.settings.cmd = "GrugFar";
-    };
+    # grug-far = {
+    #   enable = true;
+    #   lazyLoad.settings.cmd = "GrugFar";
+    # };
     undotree = {
       enable = true;
       # lazyLoad.settings.keys = [ "<leader>u" ];
