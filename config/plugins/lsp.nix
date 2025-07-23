@@ -12,6 +12,7 @@
       #   ];
       # };
     };
+    ts-comments.enable = true;
     ts-autotag = {
       enable = true;
       lazyLoad.settings.ft = [
@@ -99,6 +100,18 @@
         };
       };
     };
+    friendly-snippets.enable = true;
+    # mini = {
+    #   enable = true;
+    #   modules = {
+    #     snippets = {
+    #       snippets.__raw = "{require('mini.snippets').gen_loader.from_lang()}";
+    #     };
+    #     completion = {
+    #       set_vim_settings = false;
+    #     };
+    #   };
+    # };
     blink-copilot.enable = true;
     blink-cmp = {
       enable = true;

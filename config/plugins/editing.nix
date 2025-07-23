@@ -10,12 +10,15 @@
     # };
     undotree = {
       enable = true;
-      # lazyLoad.settings.keys = [ "<leader>u" ];
+      # lazyLoad.settings = {
+      #   keys = [ "<leader>u" ];
+      #   cmd = "UndotreeToggle";
+      # };
     };
   };
   keymaps = [
     {
-      action = "<cmd>UndoTreeToggle<CR>";
+      action = "<cmd>UndotreeToggle<CR>";
       key = "<leader>u";
     }
   ];
