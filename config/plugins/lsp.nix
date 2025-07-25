@@ -46,6 +46,7 @@
     fidget = {
       enable = true;
       settings.notification.override_vim_notify = true;
+      settings.notification.window.winblend = 0;
     };
     lint = {
       enable = true;

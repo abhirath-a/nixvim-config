@@ -12,6 +12,7 @@
         "<leader>fd" = "diagnostics_document";
         "<leader>fw" = "diagnostics_workspace";
       };
+      settings.fzf_colors.bg = -1;
     };
     flash = {
       enable = true;
