@@ -40,6 +40,7 @@
       servers = {
         nil_ls.enable = true;
         clangd.enable = true;
+        gopls.enable = true;
       };
     };
     fidget = {
@@ -101,21 +102,9 @@
       };
     };
     friendly-snippets.enable = true;
-    # mini = {
-    #   enable = true;
-    #   modules = {
-    #     snippets = {
-    #       snippets.__raw = "{require('mini.snippets').gen_loader.from_lang()}";
-    #     };
-    #     completion = {
-    #       set_vim_settings = false;
-    #     };
-    #   };
-    # };
     blink-copilot.enable = true;
     blink-cmp = {
       enable = true;
-      # lazyLoad.settings.event = "InsertEnter";
       settings = {
         keymap.preset = "default";
         cmdline = {
@@ -123,20 +112,20 @@
           completion.menu.auto_show = true;
         };
         completion = {
-          menu = {
-            border = "rounded";
-            winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
-          };
+          # menu = {
+          # border = "rounded";
+          # winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
+          # };
           documentation = {
             auto_show = true;
-            auto_show_delay_ms = 250;
+            # auto_show_delay_ms = 250;
             treesitter_highlighting = true;
             window.border = "rounded";
           };
         };
         signature = {
           enabled = true;
-          window.border = "single";
+          # window.border = "single";
         };
         appearance = {
           use_nvim_cmp_as_default = true;

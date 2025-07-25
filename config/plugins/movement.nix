@@ -13,15 +13,15 @@
         "<leader>fw" = "diagnostics_workspace";
       };
     };
-    # flash = {
-    #   enable = true;
-    #   # lazyLoad.settings.keys = [
-    #   #   "s"
-    #   #   "S"
-    #   #   "r"
-    #   #   "R"
-    #   # ];
-    # };
+    flash = {
+      enable = true;
+      # lazyLoad.settings.keys = [
+      #   "s"
+      #   "S"
+      #   "r"
+      #   "R"
+      # ];
+    };
     harpoon = {
       enable = true;
       # lazyLoad.settings.keys = [
@@ -59,46 +59,7 @@
       action = "<cmd>Oil --float<CR>";
       key = "<C-n>";
     }
-    # {
-    #   action = "<cmd>lua require('flash').jump()<cr>";
-    #   key = "s";
-    #   mode = [
-    #     "n"
-    #     "x"
-    #     "o"
-    #   ];
-    # }
-    # {
-    #   action = "<cmd>lua require('flash').treesitter()<cr>";
-    #   key = "S";
-    #   mode = [
-    #     "n"
-    #     "x"
-    #     "o"
-    #   ];
-    # }
-    # {
-    #   action = "<cmd>lua require('flash').remote()<cr>";
-    #   key = "r";
-    #   mode = [
-    #     "o"
-    #   ];
-    # }
-    # {
-    #   action = "<cmd>lua require('flash').treesitter_search()<cr>";
-    #   key = "R";
-    #   mode = [
-    #     "x"
-    #     "o"
-    #   ];
-    # }
-    # {
-    #   action = "<cmd>lua require('flash').toggle()<cr>";
-    #   key = "<c-s>";
-    #   mode = [
-    #     "c"
-    #   ];
-    # }
+
     {
       action = "<cmd>lua require('harpoon'):list():add()<cr>";
       key = "<leader>a";

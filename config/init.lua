@@ -1,3 +1,4 @@
+vim.cmd.colorscheme("gotham256")
 vim.opt.isfname:append("@-@")
 vim.api.nvim_create_autocmd("LspAttach", {
   desc = "LSP actions",
