@@ -58,6 +58,7 @@
         typescriptreact = [ "eslint" ];
         svelte = [ "eslint" ];
         ruby = [ "rubocop" ];
+        protobuf = [ "buf" ];
       };
       lazyLoad.settings.event = [
         "BufReadPre"
@@ -84,6 +85,7 @@
           java = [ "google-java-format" ];
           ruby = [ "rubocop" ];
           eruby = [ "erb_format" ];
+          protobuf = [ "buf" ];
         };
         format_after_save = {
           lsp_fallback = true;
@@ -113,10 +115,10 @@
           completion.menu.auto_show = true;
         };
         completion = {
-          # menu = {
-          # border = "rounded";
-          # winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
-          # };
+          menu = {
+            border = "rounded";
+            winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
+          };
           documentation = {
             auto_show = true;
             # auto_show_delay_ms = 250;
@@ -126,7 +128,7 @@
         };
         signature = {
           enabled = true;
-          # window.border = "single";
+          window.border = "single";
         };
         appearance = {
           use_nvim_cmp_as_default = true;
