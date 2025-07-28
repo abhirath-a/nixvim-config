@@ -1,3 +1,8 @@
+vim.keymap.set({ "n", "i", "v" }, "<Up>", "<nop>")
+vim.keymap.set({ "n", "i", "v" }, "<Down>", "<nop>")
+vim.keymap.set({ "n", "i", "v" }, "<Left>", "<nop>")
+vim.keymap.set({ "n", "i", "v" }, "<Right>", "<nop>")
+
 vim.opt.isfname:append("@-@")
 vim.api.nvim_create_autocmd("LspAttach", {
   desc = "LSP actions",
