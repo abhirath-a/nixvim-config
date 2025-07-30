@@ -3,7 +3,7 @@
     ./blink.nix
     ./conform.nix
     ./flash.nix
-    ./fzf.nix
+    ./todo-comments.nix
     ./fugitive.nix
     ./harpoon.nix
     ./lint.nix
