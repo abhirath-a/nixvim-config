@@ -7,7 +7,7 @@
     ./fugitive.nix
     ./harpoon.nix
     ./lint.nix
-    ./lsp.nix
+    ./fidget.nix
     ./mini.nix
     ./oil.nix
     ./treesitter.nix

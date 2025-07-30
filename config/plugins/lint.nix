@@ -10,7 +10,7 @@
         typescriptreact = [ "eslint" ];
         svelte = [ "eslint" ];
         ruby = [ "rubocop" ];
-        protobuf = [ "buf" ];
+        # protobuf = [ "buf" ];
       };
       lazyLoad.settings.event = [
         "BufReadPre"

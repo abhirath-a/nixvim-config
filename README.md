@@ -12,11 +12,12 @@
 - 💤 `lz-n` - for fast, lazy loaded package installations.
 - ✨ `fidget.nvim` - for a simple and minimal `vim.notify` replacement 
 - 📝 `blink.cmp` - for quick and natural feeling autocompletion in the editor.
-- 🔎 `fzf-lua` - for rapid searching and selection.
+- 🔎 `mini.pick` - for rapid and minimal searching and file picking.
 - 🛢️ `oil.nvim` - for idiomatic file editing.
 - ✅ `nvim-lint` - for reliable and dependable linting.
 - 🪥 `conform.nvim` - for asynchronous formatting that also formats on save. 
 - 🤖 `copilot.lua` - for all of the useful features that github copilot offers to the developer experience.
 - ⛓️ `fugitive.vim` - for git operations inside of your favorite text editor.
-<!-- - ⚡ `flash.nvim` - for fast selection past live grep. -->
+- ⚡ `flash.nvim` - for fast selection past live grep.
 - 🔱 `harpoon` - for fast switching between important files.
+- 📕 `refactoring.nvim` - for powerful refactoring.

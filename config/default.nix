@@ -4,6 +4,7 @@
   # Import all your configuration modules here
   imports = [
     ./plugins
+    ./lsp.nix
     ./keymaps.nix
   ];
   config = {
@@ -26,12 +27,15 @@
       scrolloff = 8;
       signcolumn = "yes";
       updatetime = 50;
+      smartcase = true;
+      winborder = "rounded";
     };
     plugins = {
-      web-devicons.enable = true;
+      # web-devicons.enable = true;
       lz-n.enable = true;
     };
 
+    diagnostic.settings.virtual_text = true;
     colorschemes.catppuccin = {
       enable = true;
       settings.style = "mocha";
@@ -40,6 +44,8 @@
     globals.mapleader = " ";
     globals.localmapleader = "//";
 
-    extraConfigLua = builtins.readFile ./init.lua;
+    extraConfigLua = ''
+      vim.ui.select = require('mini.pick').ui_select
+    '';
   };
 }

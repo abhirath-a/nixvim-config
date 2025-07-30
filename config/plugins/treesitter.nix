@@ -1,9 +1,6 @@
 {
   plugins = {
-    treesitter = {
-      enable = true;
-      settings.auto_install = true;
-    };
+    treesitter.enable = true;
     ts-comments.enable = true;
     ts-autotag = {
       enable = true;

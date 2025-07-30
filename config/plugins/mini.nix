@@ -5,6 +5,7 @@
       pairs = { };
       pick = { };
       extra = { };
+      icons = { };
     };
   };
   keymaps = [
