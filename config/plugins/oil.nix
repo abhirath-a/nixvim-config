@@ -20,7 +20,7 @@
   };
   keymaps = [
     {
-      action = "<cmd>Oil --float<CR>";
+      action = "<cmd>Oil<CR>";
       key = "<C-n>";
     }
   ];

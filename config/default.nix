@@ -1,13 +1,11 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   # Import all your configuration modules here
   imports = [
     ./plugins
     ./keymaps.nix
-    # ./options.nix
   ];
-
   config = {
     opts = {
       number = true;
@@ -41,18 +39,6 @@
     };
     globals.mapleader = " ";
     globals.localmapleader = "//";
-
-    # extraPlugins = [
-    #   (pkgs.vimUtils.buildVimPlugin {
-    #     name = "vim-gotham";
-    #     src = pkgs.fetchFromGitHub {
-    #       owner = "whatyouhide";
-    #       repo = "vim-gotham";
-    #       rev = "747ee82960b4a7ed75ac133bb84bfc02b5ac9e27";
-    #       hash = "sha256-6xJPZNbgFdyt+J14+8sn5UVAozEsLvpyOftdqldWuaA=";
-    #     };
-    #   })
-    # ];
 
     extraConfigLua = builtins.readFile ./init.lua;
   };
