@@ -12,5 +12,7 @@
     ./oil.nix
     ./treesitter.nix
     ./undotree.nix
+    ./gitsigns.nix
+    ./refactoring.nix
   ];
 }
