@@ -33,6 +33,7 @@
     plugins = {
       # web-devicons.enable = true;
       lz-n.enable = true;
+      wakatime.enable = true;
     };
 
     diagnostic.settings.virtual_text = true;
