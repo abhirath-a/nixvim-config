@@ -31,7 +31,6 @@
       winborder = "rounded";
     };
     plugins = {
-      # web-devicons.enable = true;
       lz-n.enable = true;
       wakatime.enable = true;
     };

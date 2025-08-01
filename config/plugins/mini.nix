@@ -31,7 +31,7 @@
     }
     {
       key = "<leader>fw";
-      action = "<cmd>Pick diagnostics";
+      action = "<cmd>Pick diagnostics<CR>";
     }
   ];
 }

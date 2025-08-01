@@ -5,15 +5,15 @@
     blink-cmp = {
       enable = true;
       settings = {
-        keymap.preset = "default";
+        # keymap.preset = "default";
         cmdline = {
-          keymap.preset = "inherit";
+          # keymap.preset = "inherit";
           completion.menu.auto_show = true;
         };
         completion = {
           menu = {
             border = "rounded";
-            winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
+            # winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None";
           };
           documentation = {
             auto_show = true;
