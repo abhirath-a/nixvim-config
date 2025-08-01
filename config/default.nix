@@ -37,9 +37,9 @@
     };
 
     diagnostic.settings.virtual_text = true;
-    colorschemes.catppuccin = {
+    colorschemes.kanagawa = {
       enable = true;
-      settings.style = "mocha";
+      settings.theme = "wave";
       settings.transparent_background = true;
     };
     globals.mapleader = " ";
