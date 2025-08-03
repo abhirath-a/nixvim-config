@@ -2,8 +2,6 @@
   imports = [
     ./blink.nix
     ./conform.nix
-    ./flash.nix
-    ./todo-comments.nix
     ./fugitive.nix
     ./harpoon.nix
     ./lint.nix
@@ -14,5 +12,6 @@
     ./undotree.nix
     ./gitsigns.nix
     ./refactoring.nix
+    ./flash.nix
   ];
 }

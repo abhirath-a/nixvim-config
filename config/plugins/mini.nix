@@ -6,6 +6,26 @@
       pick = { };
       extra = { };
       icons = { };
+      hipatterns = {
+        highlighters = {
+          fixme = {
+            pattern = "%f[%w]()FIXME()%f[%W]";
+            group = "MiniHipatternsFixme";
+          };
+          hack = {
+            pattern = "%f[%w]()HACK()%f[%W]";
+            group = "MiniHipatternsHack";
+          };
+          todo = {
+            pattern = "%f[%w]()TODO()%f[%W]";
+            group = "MiniHipatternsTodo";
+          };
+          note = {
+            pattern = "%f[%w]()NOTE()%f[%W]";
+            group = "MiniHipatternsNote";
+          };
+        };
+      };
     };
   };
   keymaps = [
@@ -32,6 +52,10 @@
     {
       key = "<leader>fw";
       action = "<cmd>Pick diagnostic<CR>";
+    }
+    {
+      key = "<leader>fi";
+      action = "<cmd>Pick hipatterns<CR>";
     }
   ];
 }
