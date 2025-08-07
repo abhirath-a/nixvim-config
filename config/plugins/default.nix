@@ -13,6 +13,7 @@
     ./gitsigns.nix
     ./refactoring.nix
     ./surround.nix
+    ./obsidian.nix
   ];
   plugins = {
     lz-n.enable = true;
