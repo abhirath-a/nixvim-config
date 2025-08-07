@@ -16,7 +16,7 @@
 - 🛢️ `oil.nvim` - for idiomatic file editing.
 - ✅ `nvim-lint` - for reliable and dependable linting.
 - 🪥 `conform.nvim` - for asynchronous formatting that also formats on save. 
-- 🤖 `copilot.lua` - for all of the useful features that github copilot offers to the developer experience.
+<!-- - 🤖 `copilot.lua` - for all of the useful features that github copilot offers to the developer experience. -->
 - ⛓️ `fugitive.vim` - for git operations inside of your favorite text editor.
 - ⚡ `flash.nvim` - for fast selection past live grep.
 - 🔱 `harpoon` - for fast switching between important files.

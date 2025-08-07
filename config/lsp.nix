@@ -4,7 +4,6 @@
     servers = {
       nil_ls.enable = true;
       gopls.enable = true;
-      protols.enable = true;
     };
     keymaps = [
       {

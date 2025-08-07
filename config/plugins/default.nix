@@ -12,6 +12,10 @@
     ./undotree.nix
     ./gitsigns.nix
     ./refactoring.nix
-    ./flash.nix
+    ./surround.nix
   ];
+  plugins = {
+    lz-n.enable = true;
+    wakatime.enable = true;
+  };
 }

@@ -2,6 +2,7 @@
   plugins.mini = {
     enable = true;
     modules = {
+      ai = { };
       pairs = { };
       pick = { };
       extra = { };

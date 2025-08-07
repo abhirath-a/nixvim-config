@@ -1,7 +1,6 @@
 { ... }:
 
 {
-  # Import all your configuration modules here
   imports = [
     ./plugins
     ./lsp.nix
@@ -30,22 +29,18 @@
       smartcase = true;
       winborder = "rounded";
     };
-    plugins = {
-      lz-n.enable = true;
-      wakatime.enable = true;
-    };
-
     diagnostic.settings.virtual_text = true;
     colorschemes.kanagawa = {
       enable = true;
-      settings.theme = "wave";
-      settings.transparent_background = true;
+      settings = {
+        theme = "wave";
+        transparent_background = true;
+      };
     };
-    globals.mapleader = " ";
-    globals.localmapleader = "//";
-
-    extraConfigLua = ''
-      vim.ui.select = require('mini.pick').ui_select
-    '';
+    globals = {
+      mapleader = " ";
+      localmapleader = "//";
+    };
+    extraConfigLua = "vim.ui.select = require('mini.pick').ui_select";
   };
 }
