@@ -1,12 +1,16 @@
 {
   plugins.obsidian = {
     enable = true;
-    settings.workspaces = [
-      {
-        name = "vault";
-        path = "~/vault";
-      }
-    ];
+    settings = {
+      completion.blink = true;
+
+      workspaces = [
+        {
+          name = "vault";
+          path = "~/vault";
+        }
+      ];
+    };
     lazyLoad = {
       enable = true;
       settings.ft = "markdown";

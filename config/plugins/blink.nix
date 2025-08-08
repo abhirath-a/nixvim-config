@@ -5,6 +5,7 @@
     blink-cmp = {
       enable = true;
       settings = {
+        cmdline.completion.menu.auto_show = true;
         completion = {
           menu = {
             border = "rounded";

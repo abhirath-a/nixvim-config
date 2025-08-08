@@ -28,6 +28,7 @@
       updatetime = 50;
       smartcase = true;
       winborder = "rounded";
+      conceallevel = 1;
     };
     diagnostic.settings.virtual_text = true;
     colorschemes.kanagawa = {
