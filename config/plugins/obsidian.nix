@@ -1,9 +1,18 @@
 {
   plugins.obsidian = {
     enable = true;
+    settings.workspaces = [
+      {
+        name = "vault";
+        path = "~/vault";
+      }
+    ];
     lazyLoad = {
       enable = true;
-      settings.ft = "markdown";
+      settings.event = [
+        "BufReadPre ~/vault/**/*.md"
+        "BufNewFile ~/vault/**/*.md"
+      ];
     };
   };
 }
