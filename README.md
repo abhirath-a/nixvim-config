@@ -1,3 +1,8 @@
+# NOTICE
+> [!WARNING]
+> This repo isn't being maintained anymore.
+> Currently, I am using [my kickstart-nvim.nix configuration](https://github.com/abhirath-a/nvim)
+
 # Abhi's NixVim Config
 > A fast and modern `neovim` configuration configured with `nixvim`. It starts up in 17-20ms.
 
